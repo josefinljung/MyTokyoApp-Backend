@@ -6,8 +6,9 @@ const ArticleSchema = new mongoose.Schema({
     Date: String,
     Copy: String,
     Copy2: String,
+    Copy3: String,
     Image: String,
-    ExtraImage: String,
+    Image2: String,
     PlaceName: String,
     PlaceAdress: String,
     PlaceOpeningHours: String
