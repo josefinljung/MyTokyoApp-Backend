@@ -12,6 +12,7 @@ router.get('/', async (req, res) => {
   }
   });
 
+  
 //specific post
 
 router.get('/:articleId', async (req, res) => {
@@ -22,20 +23,5 @@ router.get('/:articleId', async (req, res) => {
     res.json({message:err});
   }
 });
-
-
-// fannys och mitt försök
-// router.get('/articles/:id', async (req, res) => {
-//   try {
-//       console.log("nu skrivs det")
-//     const specificArticle = await Article.findOne({
-//     Id: req.params.id,
-//   })
-//     res.json(specificArticle);
-//   } catch(err){
-//     res.json({message:err});
-//   }
-//   });
-
 
 module.exports = router;
