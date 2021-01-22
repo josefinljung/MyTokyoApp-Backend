@@ -15,10 +15,10 @@ app.use('/articles', allarticles)
 
 //Routes
 app.get('/', (req, res) => {
-  res.send('Hello this is home!');
+  res.send();
 });
 
-//Connect to db
+//Connect to MongoDB
 mongoose.connect(
   process.env.DB_CONNECTION, 
   {useNewUrlParser: true, useUnifiedTopology: true }, 
